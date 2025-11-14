@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exclusive Steam Cleaning Durban | Upholstery & Carpet Specialists</title>
+  <meta name="description" content="Exclusive Steam Cleaning Durban. Professional carpet, couch and upholstery cleaning across Durban. Eco-friendly, fast quotes via WhatsApp." />
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <script src="main.js" defer></script>
+  <script src="motion.js" defer></script>
+  <script src="navScroll.js" defer></script>
+  <script src="automation.js" defer></script>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar motion-fade" data-motion="fade-down">
+    <div class="container">
+      <div class="row">
+        <div>📍 Serving Durban</div>
+        <div><a href="https://wa.me/+27768741012" target="_blank" class="pill">💬 WhatsApp Us</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <!-- Header / Nav -->
+<header class="motion-slide" data-motion="slide-down">
+  <div class="container nav">
+    <a class="logo" href="#">
+      <img src="logo.jpg" alt="Exclusive Steam Cleaning Logo" style="height:40px;border-radius:8px;">
+      <span>Exclusive Steam Cleaning</span>
+    </a>
+
+    <nav class="menu" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="burger" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+
+  <!-- Hero -->
+  <section class="hero motion-fade" data-motion="fade-up">
+    <div class="container">
+      <div>
+        <div class="eyebrow motion-fade" data-motion="fade-right" data-delay="100">
+          Durban’s Trusted Fabric & Upholstery Specialists
+        </div>
+
+        <h1 class="motion-fade" data-motion="fade-up" data-delay="200">
+          Deep Steam Cleaning That Restores Freshness, Hygiene & Comfort
+        </h1>
+
+        <p class="motion-fade" data-motion="fade-up" data-delay="300">
+          From carpets and couches to mattresses and curtains — we bring your fabrics back to life using
+          <strong>eco-friendly steam extraction technology</strong> that’s safe for kids, pets, and sensitive materials.
+          Our mobile team covers all areas in and around Durban, offering reliable same-day service and spotless results.
+        </p>
+
+        <div class="badges motion-fade" data-motion="fade-up" data-delay="400">
+          <span class="badge">Same-Day Service</span>
+          <span class="badge">Eco-Friendly</span>
+          <span class="badge">5★ Rated</span>
+          <span class="badge">Locally Owned</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Questionnaire / Lead Capture Card (moved above services) -->
+  <section id="questionnaire" class="motion-fade" data-motion="fade-up">
+    <div class="container">
+      <div class="card motion-fade" data-motion="fade-up" data-delay="100" id="questionnaire-card">
+        <h3 style="margin-top:0">Find the Service You Need</h3>
+        <p id="q-label">What type of cleaning do you need?</p>
+
+        <div id="q-content">
+          <!-- Step 1: Select service -->
+          <div class="q-step" data-step="1">
+        <select id="service" class="q-input">
+            <option value="" disabled selected>Select a service</option>
+            <option value="Upholstery Cleaning">Upholstery Cleaning</option>
+            <option value="Mattress Steam & Extraction">Mattress Steam & Extraction</option>
+            <option value="Carpet Deep Cleaning">Carpet Deep Cleaning</option>
+            <option value="Car Interior Cleaning">Car Interior Cleaning</option>
+        </select>
+
+          </div>
+
+          <!-- Step 2: Select number of items/rooms -->
+          <div class="q-step" data-step="2" style="display:none;">
+            <input type="number" id="quantity" class="q-input" placeholder="How many items/rooms?" min="1">
+          </div>
+
+          <!-- Step 3: Location -->
+          <div class="q-step" data-step="3" style="display:none;">
+            <select id="location" class="q-input">
+              <option value="" disabled selected>Select your area</option>
+              <optgroup label="Central Durban">
+                <option>Durban CBD</option>
+                <option>Morningside</option>
+                <option>Windermere</option>
+                <option>Berea</option>
+                <option>Musgrave</option>
+                <option>Glenwood</option>
+              </optgroup>
+              <optgroup label="North Durban">
+                <option>Durban North</option>
+                <option>Umhlanga</option>
+                <option>La Lucia</option>
+                <option>Phoenix</option>
+                <option>Mount Edgecombe</option>
+                <option>Verulam</option>
+                <option>KwaMashu</option>
+              </optgroup>
+              <optgroup label="South Durban">
+                <option>Bluff</option>
+                <option>Amanzimtoti</option>
+                <option>Isipingo</option>
+                <option>Chatsworth</option>
+                <option>Montclair</option>
+                <option>Woodlands</option>
+              </optgroup>
+              <optgroup label="West Durban">
+                <option>Westville</option>
+                <option>Pinetown</option>
+                <option>Kloof</option>
+                <option>Hillcrest</option>
+                <option>Botha's Hill</option>
+              </optgroup>
+              <optgroup label="Other Areas">
+                <option>Ballito</option>
+                <option>Stanger</option>
+                <option>Tongaat</option>
+                <option>Other (not listed)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <!-- Step 4: WhatsApp button -->
+          <div class="q-step" data-step="4" style="display:none; text-align:center;">
+            <a id="sendBtn" class="cta" style="width:100%;display:block;padding:12px;">📨 Send Details on WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Next Button -->
+        <button id="nextBtn" class="cta" style="margin-top:12px;">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Widgets -->
+  <section id="services" class="motion-fade" data-motion="fade-up">
+    <div class="container">
+      <div class="section-head motion-fade" data-motion="fade-right">
+        <div>
+          <div class="eyebrow">Our Services</div>
+          <h2>Premium Cleaning Solutions</h2>
+        </div>
+      </div>
+
+      <div class="widget-grid scroll-x">
+        <div class="service-widget motion-fade" data-motion="fade-up" data-delay="300">
+          <img src="UpholsteryCleaning.jpg" alt="Upholstery Cleaning">
+          <h3>Upholstery Cleaning</h3>
+          <p>Revive your couches, dining chairs, and soft furnishings with our professional upholstery care.
+          We lift grime, odors, and allergens — extending fabric life while restoring a fresh, comfortable feel.</p>
+        </div>
+        <div class="service-widget motion-fade" data-motion="fade-up" data-delay="400">
+          <img src="MattressSteam.jpg" alt="Mattress Cleaning">
+          <h3>Mattress Steam & Extraction</h3>
+          <p>Deep-clean your mattress with steam and extraction — removing dust mites, sweat, and allergens.
+          Safe, chemical-free cleaning for healthier sleep and long-lasting freshness.</p>
+        </div>
+        <div class="service-widget motion-fade" data-motion="fade-up" data-delay="500">
+          <img src="CarpetCleaning.jpg" alt="Carpet Cleaning">
+          <h3>Carpet Deep Cleaning</h3>
+          <p>Our German-engineered extraction machines restore your carpets to their best.
+          Stains, dirt, and odors are removed from deep within the fibers — leaving a soft, fresh finish.</p>
+        </div>
+        <div class="service-widget motion-fade" data-motion="fade-up" data-delay="600">
+          <img src="CarInteriors.jpg" alt="Car Interior Cleaning">
+          <h3>Car Interior Cleaning</h3>
+          <p>From seats to carpets, we use steam and spray extraction to sanitize and refresh your car interior.
+          Removes stains, spills, pet hair, and odors — restoring that “new car” feel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section id="why" class="motion-fade" data-motion="fade-up">
+    <div class="container split">
+      <div class="motion-fade" data-motion="fade-right">
+        <div class="eyebrow">Why Choose Us</div>
+        <h2>Durban Cleaning Specialists You Can Trust</h2>
+        <p class="lead">Local Durban team with years of experience, transparent pricing and a satisfaction guarantee.</p>
+        <ul>
+          <li>Durban-based technicians for fast call-outs</li>
+          <li>Certified equipment and eco-safe detergents</li>
+          <li>Up-front quotes — no hidden fees</li>
+          <li>Fully insured for your peace of mind</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us (Moved to bottom) -->
+  <section id="about" style="background:var(--bg-soft)" class="motion-fade" data-motion="fade-up">
+    <div class="container">
+      <div class="section-head motion-fade" data-motion="fade-right">
+        <div>
+          <div class="eyebrow">About Us</div>
+          <h2>Exclusive Steam Cleaning (Pty) Ltd</h2>
+        </div>
+      </div>
+
+      <p style="max-width:800px;margin:auto;text-align:center;line-height:1.7;" 
+         class="motion-fade" data-motion="fade-up" data-delay="100">
+        Based in <strong>Durban</strong>, Exclusive Steam Cleaning (Pty) Ltd is a locally owned and trusted name in 
+        professional cleaning solutions. We’re passionate about transforming homes, offices, and commercial spaces with the 
+        highest standards of hygiene and care.
+      </p>
+
+      <p style="max-width:800px;margin:auto;text-align:center;line-height:1.7;margin-top:20px;" 
+         class="motion-fade" data-motion="fade-up" data-delay="200">
+        With a commitment to excellence and customer satisfaction, our expert team delivers 
+        <strong>eco-friendly steam and spray extraction</strong> services that reach deep into fibers and surfaces. 
+        Using advanced German-engineered technology, we eliminate up to <strong>99.9% of bacteria</strong>, allergens, and 
+        stubborn dirt—leaving every surface renewed, sanitized, and fresh.
+      </p>
+
+      <p style="max-width:800px;margin:auto;text-align:center;line-height:1.7;margin-top:20px;" 
+         class="motion-fade" data-motion="fade-up" data-delay="300">
+        Whether it’s your home, business, hotel, or industrial site — we bring 
+        <strong>Durban’s most reliable mobile steam cleaning service</strong> straight to your door, combining 
+        professionalism, passion, and proven results.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="motion-fade" data-motion="fade-up">
+    <div class="container">
+      <div class="eyebrow motion-fade" data-motion="fade-right">Contact</div>
+      <h2 class="motion-fade" data-motion="fade-up" data-delay="100">Book Your Steam Clean Today</h2>
+      <p class="lead motion-fade" data-motion="fade-up" data-delay="200">Chat with us directly via WhatsApp for quotes & bookings.</p>
+      <a href="https://wa.me/+27768741012" target="_blank" class="cta motion-fade" data-motion="fade-up" data-delay="300" style="padding:16px 20px;">💬 Message on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="site-footer motion-fade" data-motion="fade-up">
+  <div class="footer-top">
+    <img src="logo.jpg" alt="Exclusive Steam Cleaning Logo" class="footer-logo">
+    <strong>Exclusive Steam Cleaning Durban</strong>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/YourPageName" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/oveeshxy/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/+27768741012" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div>© <span id="y"></span> Exclusive Steam Cleaning Durban. All rights reserved.</div>
+    <div><a>Oveeshay Pillay</a></div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>
