@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const location = document.getElementById("location").value;
 
         const message = `Good-Day!, I'm looking for help with:\n\n• Service: ${service}\n• Quantity: ${quantity}\n• Area: ${location}\n\nPlease let me know availability and pricing.`;
-        sendBtn.href = `https://wa.me/2768741012?text=${encodeURIComponent(message)}`;
+        sendBtn.href = `https://wa.me/+27768741012?text=${encodeURIComponent(message)}`;
     }
 
     nextBtn.addEventListener("click", () => {
