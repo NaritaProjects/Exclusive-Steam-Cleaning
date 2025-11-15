@@ -110,6 +110,40 @@ textarea:focus {
     margin-bottom: 15px;
 }
 
+.scroll-x {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+
+    /* show scrollbar */
+    scrollbar-width: thin;
+    /* Firefox */
+}
+
+/* Optional: style scrollbar (Chrome, Edge, Safari) */
+.scroll-x::-webkit-scrollbar {
+    height: 8px;
+    /* scrollbar thickness */
+}
+
+.scroll-x::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 10px;
+}
+
+.scroll-x::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.scroll-x::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
 /* ---------- Utilities ---------- */
 .pill {
     display: inline-flex;
@@ -176,5 +210,50 @@ textarea:focus {
 
 #questionnaire-card button.cta {
     width: 100%;
+    text-align: center;
+}
+
+.qty-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.qty-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    background: #222;
+    /* dark neutral button */
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+
+    display: flex;
+    /* ENSURES PERFECT CENTERING */
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.qty-btn:hover {
+    background: #333;
+    /* slight lighter hover */
+}
+
+.qty-btn:active {
+    transform: scale(0.9);
+}
+
+#qty-display {
+    font-size: 22px;
+    font-weight: bold;
+    min-width: 30px;
+    /* makes it stable and centered */
     text-align: center;
 }

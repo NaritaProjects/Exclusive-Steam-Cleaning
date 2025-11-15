@@ -23,7 +23,7 @@
   <div class="topbar motion-fade" data-motion="fade-down">
     <div class="container">
       <div class="row">
-        <div>📍 Serving Durban</div>
+        <div>Exclusive Steam Cleaning  📍 Serving Durban</div>
         <div><a href="https://wa.me/+27768741012" target="_blank" class="pill">💬 WhatsApp Us</a></div>
       </div>
     </div>
@@ -34,8 +34,7 @@
 <header class="motion-slide" data-motion="slide-down">
   <div class="container nav">
     <a class="logo" href="#">
-      <img src="logo.jpg" alt="Exclusive Steam Cleaning Logo" style="height:40px;border-radius:8px;">
-      <span>Exclusive Steam Cleaning</span>
+    <img src="logo.jpg" alt="Exclusive Steam Cleaning Logo" style="height:60px; width:auto; border-radius:12px;">
     </a>
 
     <nav class="menu" aria-label="Primary">
@@ -50,32 +49,33 @@
 
 
   <!-- Hero -->
-  <section class="hero motion-fade" data-motion="fade-up">
-    <div class="container">
-      <div>
-        <div class="eyebrow motion-fade" data-motion="fade-right" data-delay="100">
-          Durban’s Trusted Fabric & Upholstery Specialists
-        </div>
+<section class="hero motion-fade" data-motion="fade-up">
+  <div class="container">
+    <div>
+      <div class="eyebrow motion-fade" data-motion="fade-right" data-delay="100">
+        Durban’s Trusted Steam Cleaning Professionals
+      </div>
 
-        <h1 class="motion-fade" data-motion="fade-up" data-delay="200">
-          Deep Steam Cleaning That Restores Freshness, Hygiene & Comfort
-        </h1>
+      <h1 class="motion-fade" data-motion="fade-up" data-delay="200">
+        Deep Steam Cleaning for a Fresher, Cleaner & Healthier Home
+      </h1>
 
-        <p class="motion-fade" data-motion="fade-up" data-delay="300">
-          From carpets and couches to mattresses and curtains — we bring your fabrics back to life using
-          <strong>eco-friendly steam extraction technology</strong> that’s safe for kids, pets, and sensitive materials.
-          Our mobile team covers all areas in and around Durban, offering reliable same-day service and spotless results.
-        </p>
+      <p class="motion-fade" data-motion="fade-up" data-delay="300">
+        From carpets and couches to mattresses and car interiors — we restore comfort, remove tough stains,
+        and eliminate odors using advanced <strong>eco-friendly steam extraction technology</strong>.
+        Safe for kids, pets, and delicate materials, with fast response times across all Durban areas.
+      </p>
 
-        <div class="badges motion-fade" data-motion="fade-up" data-delay="400">
-          <span class="badge">Same-Day Service</span>
-          <span class="badge">Eco-Friendly</span>
-          <span class="badge">5★ Rated</span>
-          <span class="badge">Locally Owned</span>
-        </div>
+      <div class="badges motion-fade" data-motion="fade-up" data-delay="400">
+        <span class="badge">Same-Day Service</span>
+        <span class="badge">Eco-Friendly</span>
+        <span class="badge">5★ Rated</span>
+        <span class="badge">Trusted & Local</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Questionnaire / Lead Capture Card (moved above services) -->
   <section id="questionnaire" class="motion-fade" data-motion="fade-up">
@@ -99,8 +99,14 @@
 
           <!-- Step 2: Select number of items/rooms -->
           <div class="q-step" data-step="2" style="display:none;">
-            <input type="number" id="quantity" class="q-input" placeholder="How many items/rooms?" min="1">
+            <div class="qty-wrapper">
+              <button type="button" class="qty-btn" id="qty-minus">−</button>
+              <span id="qty-display">1</span>
+              <button type="button" class="qty-btn" id="qty-plus">+</button>
+            </div>
+            <input type="hidden" id="quantity" value="1">
           </div>
+
 
           <!-- Step 3: Location -->
           <div class="q-step" data-step="3" style="display:none;">
@@ -266,8 +272,15 @@
 
     <div class="footer-socials motion-fade" data-motion="fade-up" data-delay="200">
       <a ...><i class="fab fa-facebook-f"></i></a>
-      <a ...><i class="fab fa-instagram"></i></a>
-      <a ...><i class="fab fa-whatsapp"></i></a>
+      <!-- Instagram (Updated) -->
+      <a href="https://www.instagram.com/oveeshxy/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/27768741012" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
     </div>
   </div>
 

@@ -41,4 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const delay = parseInt(footer.dataset.delay) || 0;
         setTimeout(() => footer.classList.add("active"), delay);
     }
+
+
 });
